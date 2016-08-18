@@ -6,6 +6,7 @@ for (j in 1:(12*7)) {
 }
 #Starting day 1 pain values
 capstone[1:45,7]=round(rnorm(mean=8,sd=.5,n=45))
+#Remaining days.
 for (j in 2:(12*7)) {
   capstone[1:15,j+6] = round(rnorm(mean=8,sd=.25,n=15))
   capstone[16:45,j+6] = round(rnorm(mean=8.06024-.06024*j,sd=.25,n=30))
